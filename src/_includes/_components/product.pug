@@ -1,0 +1,13 @@
+mixin product(args)
+	- let products = [{content: "All products", classList: "activeBtnFilter"}, {content: "Bookcase"}, {content: "Wardrobes"}]
+
+	.c-product 
+		+title({dataTitle: "fourth-level", content: "PRODUCT LINE", classList: "e-title--small e-title--margin"})
+		.c-product__wrapper
+			each item in products
+				if(item.classList)
+					.c-product__item(class= item.classList)
+						span.c-product__item__text= item.content
+				else
+					.c-product__item 
+						span.c-product__item__text= item.content

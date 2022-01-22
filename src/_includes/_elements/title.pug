@@ -1,0 +1,11 @@
+mixin title(args)
+	- let content   = args.content;
+	- let dataTitle = args.dataTitle;
+	- let classList = args.classList;
+
+		if(dataTitle = "three-level")
+			h3.e-title(data-title= dataTitle, class= classList)= content
+		else if(dataTitle = "fourth-level")
+			h4.e-title(data-title= dataTitle, class= classList)= content
+		else if(dataTitle = "sixth-level")
+			h6.e-title(data-title= dataTitle, class= classList)= content

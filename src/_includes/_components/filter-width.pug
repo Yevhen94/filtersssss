@@ -1,0 +1,11 @@
+mixin filter-width(args)
+	.c-filter-width
+		.c-filter-width__title
+			+title({dataTitle: "fourth-level", content: "WIDTH", classList: "e-title--small"})
+			+total()
+		+slider({classList:"c-filter-width-slider"})
+		.c-filter-width__value
+			.c-filter-width__value__wrapper 
+				span.c-filter-width__value__text 
+				span.c-filter-width__value__text 
+			+total()

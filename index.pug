@@ -1,0 +1,17 @@
+extends ./src/_extends/common
+
+block style
+	link(rel="stylesheet" href="./styles/index.css")
+	link(rel="stylesheet" href="./node_modules/nouislider/dist/nouislider.min.css")
+	block title
+		title TestTask
+block content
+	+filter()
+	+card()
+block script
+	script(src="./node_modules/nouislider/dist/nouislider.js")
+	script(type="module" src="./js/index.js")
+
+
+
+

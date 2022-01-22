@@ -1,0 +1,29 @@
+.c-features {
+  @include media("<portraitPhone") {
+    display: none;
+  }
+
+  &__wrapper {
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    display: flex;
+  }
+
+  &__item {
+    border: 1px solid $c-black;
+    border-radius: 18px;
+    text-align: center;
+    margin-right: 8px;
+    font-size: em(12);
+    padding: 4px 12px;
+    line-height: 18px;
+    cursor: pointer;
+    width: 53%;
+
+    &:last-child {
+      max-width: 100px;
+      margin-right: 0;
+    }
+  }
+}

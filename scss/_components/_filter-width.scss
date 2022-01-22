@@ -1,0 +1,55 @@
+.c-filter-width {
+  @include media("<portraitPhone") {
+    padding: 8px 28px 10px 12px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+
+  &__title {
+    @include media("<portraitPhone") {
+      flex-direction: column;
+      align-items: center;
+      display: flex;
+    }
+
+    & > .c-total {
+      display: none;
+
+      @include media("<portraitPhone") {
+        display: block;
+      }
+    }
+  }
+
+  &-slider {
+    margin: 0 15px;
+
+    @include media("<portraitPhone") {
+      width: 182px;
+      margin: 0;
+    }
+  }
+
+  &__value {
+    flex-direction: column;
+    font-size: em(12);
+    display: flex;
+
+    @include media("<portraitPhone") {
+      display: none;
+    }
+
+    &__wrapper {
+      justify-content: space-between;
+      margin-top: 25px;
+      display: flex;
+    }
+  }
+
+  & .e-title {
+    @include media("<portraitPhone") {
+      text-transform: lowercase;
+    }
+  }
+}

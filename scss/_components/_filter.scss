@@ -1,0 +1,47 @@
+.c-filter {
+  @include maxCentered(280);
+  line-height: 140%;
+
+  @include media("<portraitPhone") {
+    @include maxCentered(290);
+  }
+
+  &__wrapper {
+    padding: 30px 24px 24px;
+    flex-direction: column;
+    color: $c-blackLight;
+    border-radius: 4px;
+    display: flex;
+
+    @include media("<portraitPhone") {
+      padding: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 28px;
+
+    @include media("<portraitPhone") {
+      margin-bottom: 14px;
+      padding: 5px;
+      order: -1;
+    }
+  }
+
+  &__button {
+    margin-top: 56px;
+    @include media("<portraitPhone") {
+      display: none;
+    }
+  }
+
+  &__customize {
+    border-radius: 4px;
+    margin-top: 14px;
+    padding: 10px;
+
+    @include media("<portraitPhone") {
+      display: none;
+    }
+  }
+}

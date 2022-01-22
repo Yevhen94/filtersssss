@@ -1,0 +1,9 @@
+mixin button(args)
+	- let type       = args.type;
+	- let classList  = args.classList;
+	- let id         = args.id;
+	- let content    = args.content;
+
+	button.c-button(type= type, class= classList, id= id)
+		if(content)
+			span.c-button__text= content

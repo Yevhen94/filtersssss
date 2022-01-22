@@ -1,0 +1,59 @@
+.c-product {
+  flex-direction: column;
+  display: flex;
+
+  @include media("<portraitPhone") {
+    padding: 8px 5px 6px;
+    order: -1;
+  }
+
+  &__wrapper {
+    margin-top: 20px;
+
+    @include media("<portraitPhone") {
+      justify-content: center;
+      align-items: stretch;
+      margin-top: 0;
+      display: flex;
+    }
+  }
+
+  &__item {
+    border: 1px solid $c-black;
+    border-radius: 18px;
+    margin-bottom: 14px;
+    text-align: center;
+    font-size: em(12);
+    line-height: 18px;
+    padding: 4px 12px;
+    max-width: 200px;
+    cursor: pointer;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include media("<portraitPhone") {
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      margin-right: 4px;
+      margin-bottom: 0;
+      color: $c-jade;
+      display: flex;
+      border: none;
+      padding: 5px;
+      width: 33%;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  & .e-title {
+    @include media("<portraitPhone") {
+      display: none;
+    }
+  }
+}

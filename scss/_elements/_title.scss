@@ -1,0 +1,36 @@
+.e-title {
+  font-weight: 400;
+
+  @include media("<portraitPhone") {
+    color: $c-jade;
+  }
+
+  &--main {
+    margin-bottom: 14px;
+    font-size: em(24);
+
+    @include media("<portraitPhone") {
+      margin-bottom: 0;
+    }
+  }
+
+  &--small {
+    margin-bottom: 30px;
+    font-size: em(18);
+
+    @include media("<portraitPhone") {
+      font-size: em(12);
+      margin-bottom: 0;
+    }
+  }
+
+  &--margin {
+    margin-bottom: 0;
+  }
+
+  &--product-item {
+    color: $c-blackLight;
+    line-height: 140%;
+    font-size: em(24);
+  }
+}

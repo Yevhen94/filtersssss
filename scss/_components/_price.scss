@@ -1,0 +1,41 @@
+.price {
+  flex-direction: column;
+  display: flex;
+
+  @include media("<portraitPhone") {
+    justify-content: space-between;
+    padding: 10px 28px 8px 18px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__value {
+    display: inline-block;
+    font-size: em(12);
+    margin-top: 25px;
+
+    @include media("<portraitPhone") {
+      display: none;
+    }
+  }
+
+  &-slider {
+    align-self: stretch;
+    margin-left: 15px;
+
+    @include media("<portraitPhone") {
+      align-self: center;
+      width: 74%;
+    }
+  }
+
+  & .e-title {
+    @include media("<portraitPhone") {
+      text-transform: lowercase;
+
+      &::first-letter {
+        text-transform: uppercase;
+      }
+    }
+  }
+}

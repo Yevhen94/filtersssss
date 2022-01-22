@@ -1,0 +1,31 @@
+.e-underline {
+  background-color: $c-bgLineTransparent;
+  border: none;
+  height: 1px;
+
+  &--margin {
+    margin: 28px 0;
+
+    @include media("<portraitPhone") {
+      margin: 0;
+    }
+  }
+
+  &--main {
+    @include media("<portraitPhone") {
+      display: none;
+    }
+  }
+
+  &--order {
+    @include media("<portraitPhone") {
+      order: -1;
+    }
+  }
+
+  &--display {
+    @include media("<portraitPhone") {
+      display: none;
+    }
+  }
+}

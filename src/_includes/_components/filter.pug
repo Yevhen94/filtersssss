@@ -1,0 +1,19 @@
+mixin filter(args)
+	.c-filter
+		.c-filter__wrapper
+			.c-filter__title
+				+title({dataTitle: "three-level", content : "Filter", classList: "e-title--main"})
+
+				+underline({classList: "e-underline--main"})
+			+price()
+			+underline({classList: "e-underline--margin"})
+			+filter-width()
+			+underline({classList: "e-underline--margin e-underline--display"})
+			+product()
+			+underline({classList: "e-underline--margin e-underline--order"})
+			+features()
+			.c-filter__button
+				+button({type: "button", content: "Save pdf"})
+		.c-filter__customize 
+			+button({type: "button", content: "customize your version", classList: "c-button--bgcolor"})
+		+pointers()

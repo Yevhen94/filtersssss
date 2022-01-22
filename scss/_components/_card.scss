@@ -1,0 +1,41 @@
+.c-card {
+  @include maxCentered(415);
+  background-color: $c-grey;
+  border: 2px solid $c-red;
+  margin-bottom: 40px;
+  margin-top: 40px;
+
+  &__image {
+    padding: 30px 84px 50px 132px;
+    background-color: $c-white;
+    border-radius: 4px;
+    position: relative;
+  }
+
+  &__content {
+    border-bottom: 1px solid $c-bgLineTransparent;
+    justify-content: space-between;
+    padding: 28px 18px 24px 38px;
+    align-items: center;
+    display: flex;
+  }
+
+  &__title {
+    &__text {
+      color: $c-blackLightTransparent;
+    }
+  }
+
+  &__price {
+    border: 1px solid $c-black;
+    border-radius: 18px;
+    padding: 10px 30px;
+    font-size: em(18);
+
+    &__cost {
+      &::after {
+        content: " ";
+      }
+    }
+  }
+}

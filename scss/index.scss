@@ -1,0 +1,64 @@
+// Plugins
+@import "./plugins/index";
+// Media
+@import "./include-media";
+// Config
+@import "./variables";
+// Mixins
+@import "./mixins";
+// Fonts
+@import "./fonts";
+// Main styles
+@import "./_components/index";
+@import "./_elements/index";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: $f-montserrat;
+}
+
+div.noUi-horizontal {
+  height: 4px;
+}
+
+div.noUi-target {
+  border-radius: 2px;
+  border: none;
+}
+
+div.noUi-handle::after,
+div.noUi-handle::before {
+  content: none;
+}
+
+div.noUi-horizontal .noUi-handle {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.07), 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  background-color: $c-white;
+  border-radius: 50%;
+  @include size(30);
+  right: -15px;
+  border: none;
+  top: -13px;
+}
+
+div.noUi-connects {
+  border-radius: 2px;
+}
+
+div.noUi-connect {
+  background-color: $c-jade;
+}
+
+.activeBtnFilter {
+  background-color: $c-jade;
+  color: $c-white;
+}
+
+.disabledWidthValueBlock {
+  display: none;
+}

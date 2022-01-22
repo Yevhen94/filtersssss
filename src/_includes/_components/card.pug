@@ -1,0 +1,18 @@
+mixin card(args)
+
+  .c-card 
+    .c-card__wrapper
+      .c-card__image
+        +img({src: "./assets/images/card-item.png", alt: "product"})
+        +card-icon()
+      .c-card__content
+        .c-card__title 
+          span.c-card__title__text type 01
+          +title({dataTitle: "sixth-level", content: "Bookcase", classList: "e-title--product-item"})
+        .c-card__price
+          span.c-card__price__cost 1 990
+          span.c-card__price__symbol $
+    //- svg(class="icon icon-ellips") 
+    //- 	use(xlink:href="#icon-ellips")
+
+

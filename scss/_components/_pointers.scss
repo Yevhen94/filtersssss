@@ -1,0 +1,65 @@
+.c-pointers {
+  transform: translate(-50%, -8px);
+  position: absolute;
+  display: none;
+  height: 20px;
+  width: 90px;
+  left: 50%;
+
+  &--visible {
+    display: block;
+  }
+
+  &__wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__left-top,
+  &__center-top,
+  &__right-top,
+  &__left-bottom,
+  &__center-bottom,
+  &__right-bottom {
+    background-color: $c-greyLight;
+    position: absolute;
+    border-radius: 50%;
+    @include size(3);
+  }
+
+  &__left-top {
+    left: 0;
+    top: 0;
+  }
+
+  &__center-top {
+    left: 50%;
+    top: 0;
+  }
+
+  &__right-top {
+    right: 0;
+    top: 0;
+  }
+
+  &__left-bottom {
+    bottom: 0;
+    left: 0;
+  }
+
+  &__center-bottom {
+    bottom: 0;
+    left: 50%;
+  }
+
+  &__center-top,
+  &__center-bottom {
+    transform: translate(-50%, 0);
+  }
+
+  &__right-bottom {
+    bottom: 0;
+    right: 0;
+  }
+}

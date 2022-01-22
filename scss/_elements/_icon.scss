@@ -1,0 +1,12 @@
+.icon {
+  @include size(24);
+  stroke: $c-black;
+  fill: $c-black;
+  display: block;
+
+  &-ellips {
+    @include size(140);
+    fill: $c-white;
+    stroke: none;
+  }
+}
